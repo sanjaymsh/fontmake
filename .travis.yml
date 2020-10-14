@@ -27,12 +27,28 @@ matrix:
   include:
     - python: 3.7
       env: TOXENV=lint
+      arch: amd64
     - python: 3.6
       env: TOXENV=py36-cov
+      arch: amd64
     - python: 3.7
       env: TOXENV=py37-cov
+      arch: amd64
     - python: 3.8
       env: TOXENV=py38-cov
+      arch: amd64
+    - python: 3.7
+      env: TOXENV=lint
+      arch: ppc64le
+    - python: 3.6
+      env: TOXENV=py36-cov
+      arch: ppc64le
+    - python: 3.7
+      env: TOXENV=py37-cov
+      arch: ppc64le
+    - python: 3.8
+      env: TOXENV=py38-cov
+      arch: ppc64le
 
 install:
   - pip install tox
